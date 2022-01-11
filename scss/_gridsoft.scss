@@ -1,0 +1,56 @@
+.contenedor1 {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat (3, 1fr);
+    grid-template-areas: "reco1 reco1 reco2" "reco3 reco4 reco4" "reco3 reco5 reco6";
+    flex-direction: row;
+    justify-content: center;
+    div {
+        margin: 20px;
+        padding: 20px;
+        font-size: 1.4rem;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        justify-self: center;
+    }
+    .reco1 {
+        color: rgba(255, 255, 255, 0.973);
+        height: 400px;
+        background-image: url(../media/reco1.jpg);
+        grid-area: reco1;
+    }
+    .reco2 {
+        color: white;
+        height: 400px;
+        grid-area: reco2;
+        background-image: url(../media/reco2.jpg);
+    }
+    .reco3 {
+        color: rgb(221, 247, 221);
+        height: auto;
+        grid-area: reco3;
+        background-image: url(../media/reco3.jpg);
+    }
+    .reco4 {
+        color: rgb(0, 0, 0);
+        height: 400px;
+        background-image: url(../media/reco4.jpg);
+        grid-area: reco4;
+    }
+    .reco5 {
+        color: rgb(244, 244, 250);
+        height: 400px;
+        background-image: url(../media/reco5.jpg);
+        grid-area: reco5;
+    }
+    .reco6 {
+        color: #000000;
+        height: 400px;
+        background-image: url(../media/reco6.jpg);
+        grid-area: reco6;
+    }
+}
