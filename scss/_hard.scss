@@ -1,0 +1,26 @@
+.repuestos {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    .categorias {
+        float: left;
+        width: 25%;
+        background-color: $fondo_solid;
+        margin: 20px;
+        color: whitesmoke;
+        text-transform: capitalize;
+        text-align: left;
+        letter-spacing: 2px;
+        ul {
+            padding: 10px;
+            li {
+                padding-bottom: 10px;
+                list-style: none;
+                &:hover {
+                    color: rgb(152, 189, 224);
+                    font-size: 105%;
+                }
+            }
+        }
+    }
+}

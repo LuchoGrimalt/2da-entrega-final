@@ -5,18 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Fonts de google: Orbitron,Rajdhani y Staatliches-->
+    <!----- Description y keywords para SEO -->
+    <meta name="description" content="Las mejores placas de video para soportar tu juegos favoritos y los mejores accesorios gamer">
+    <meta name="keywords" content="windows, office, vga, placas de video, RTX, teclado, gaming, gamer, competencias, asesoramiento, oencofertas,actualizacion, hardware, software, PS4, nintendo, adobe, visual,EA sports">
+    <!----- Fonts de google: Orbitron,Rajdhani y Staatliches -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Rajdhani:wght@600&family=Staatliches&display=swap" rel="stylesheet">
+    <!----- Favicon ----->
     <link rel="shorcut icon" href="../media/icono.ico">
+    <!----- links de animate animated y wow -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/animate.css">
+    <!----- CDN de bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <!----- CSS local de estilo propio -->
     <link rel="stylesheet" href="../css/estilo.css">
-    <title>c>_WG Gamer</title>
-    <link rel="stylesheet" href="pages/gamer.html">
+    <title>Gaming >_WG todo el hard y soft que buscas con el mejor asesoramiento</title>
+    <link rel="stylesheet" href="index.html">
 </head>
 
 <body>
@@ -26,12 +33,20 @@
             <h1 id="top">codigo>_WG </h1>
         </div>
         <h3 class="eslogan animate__animated animate__pulse">for work and gaming</h3>
-        <div class="redes">
-            <img src="../media/instagram.png" whidth="32px" alt="instagram">
-            <img src="../media/facebook.png" whidth="32px" alt="facebook">
-            <img src="../media/twitter.png" whidth="32px" alt="twitter">
-            <img src="../media/whatsapp.png" whidth="32px" alt="whatsapp">
-        </div>
+        <section class="redes">
+            <div>
+                <a href="https://www.instagram.com/?hl=es-la " target="_blank"><img src="../media/redes/instagram.png" whidth="32px" alt="instagram"></a>
+            </div>
+            <div>
+                <a href="https://es-la.facebook.com/" target="_blank"> <img src="../media/redes/facebook.png" whidth="32px" alt="facebook"></a>
+            </div>
+            <div>
+                <a href="https://twitter.com/?lang=es" target="_blank"><img src="../media/redes/twitter.png" whidth="32px" alt="twitter"></a>
+            </div>
+            <div>
+                <a href="https://www.whatsapp.com/" target="_blank"><img src="../media/redes/whatsapp.png" whidth="32px" alt="whatsapp"></a>
+            </div>
+        </section>
     </header>
     <!-- carrusel de bootstrap-->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -42,13 +57,13 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../media/game1.jpg" class="d-block w-100" alt="Gamers">
+                <img src="../media/carousel/game1.jpg" class="d-block w-100" alt="Gamers">
             </div>
             <div class="carousel-item">
-                <img src="../media/game2.jpg" class="d-block w-100" alt="dev">
+                <img src="../media/carousel/game2.jpg" class="d-block w-100" alt="dev">
             </div>
             <div class="carousel-item">
-                <img src="../media/game3.jpg" class="d-block w-100" alt="Music">
+                <img src="../media/carousel/game3.jpg" class="d-block w-100" alt="Music">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -62,7 +77,7 @@
     </div>
     <!-- Navegador personalizado de bootstrap-->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-primary">
-        <div class="container-fluid ">
+        <div class="container-fluid lead">
             <a class="navbar-brand" href="../index.html"><img src="../media/logo2.jpg" width="200px" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -75,11 +90,11 @@
                     </a>
                         <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item text-primary " href="../pages/hardware.html">Hard</a></li>
-                            <li><a class="dropdown-item text-primary " href="../pages/software.html">Software </a></li>
+                            <li><a class="dropdown-item text-primary " href="../pages/hardware.html">Accesorios </a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item text-primary" href="../pages/gaming.html">Destino Gamer</a></li>
+                            <li><a class="dropdown-item text-primary" href="../pages/gaming.html">Gamer</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -89,140 +104,143 @@
                         <a class="nav-link active text-white" aria-current="page" href="../pages/gaming.html">Gaming</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="../pages/contacto.html">Contactenos</a>
+                        <a class="nav-link text-white" href="../pages/contacto.html" target="_blank">Contactenos</a>
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="¿Que buscas?" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">🔎</button>
                 </form>
             </div>
         </div>
     </nav>
-    <!-- Grilla de bootstrap -->
-    <main class="container-fluid">
-        <h2 class="separador">Lo que tenes que saber!</h2>
-        <div class="row">
-            <section class="recreo ">
-                <div class="recreo__uno">
-                    <p>AFA Desarrollo Este viernes 23 y sábado 24 se disputará la clasificatoria sudamericana 😉 <br> para la mayor competición de selecciones de la FIFAe del mundo. Un total de 60 selecciones participarán en la FIFA eNations Series 2021.</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/25_RVxLpv8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="recreo__dos">
-                    <h3 class="recreo__dos__texto">
-                    </h3>
-                    <p>Competencias Gamers! y sacale el jugo a tu compu 🕹 <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Recusandae tempora explicabo repellendus labore quisquam.</p>
-                    <iframe class="recreo__dos__video" width="560" height="315" src="https://www.youtube.com/embed/iGoirv2lLMY?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-                <div class="recreo2__texto2">
-                </div>
-                <div class="recreo__uno">
-                    <p>The most incredible Grand Final comeback | Hashtag Tom v Levi de Weerd | PS4 Final | EU Qualifier 3 😉 <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. suscipit ullam expedita.</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/I5CMCCOzb4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="recreo__dos">
-                    <h3 class="recreo__dos__texto">
-                    </h3>
-                    <p>Competencias Gamers! y sacale el jugo a tu compu 🕹 <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Recusandae tempora explicabo repellendus labore quisquam.</p>
-                    <iframe class="recreo__dos__video" width="560" height="315" src="https://www.youtube.com/embed/iGoirv2lLMY?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-                <div class="recreo2__texto2">
-                </div>
-            </section>
-        </div>
-        <h2 class="separador"> Solo artículos gamer</h2>
-        <div class="col-12 articulos">
-            <div class="cathard catgamer wow animate__animated animate__fadeIn">
-                <p>Nombre del producto</p>
-                <img src="../media/vga.jpg" width="200px" alt="art1">
-                <p> hard Gamer</p>
-            </div>
-            <div class="cathard catgamer wow animate__animated animate__fadeIn">
-                <p>Nombre del producto</p>
-                <img src="../media/vga.jpg" width="200px" alt="art2">
-                <p> hard Gamer</p>
-            </div>
-            <div class="cathard catgamer wow animate__animated animate__fadeIn">
-                <p>Nombre del producto</p>
-                <img src="../media/vga.jpg" width="200px" alt="art3">
-                <p> hard Gamer</p>
-            </div>
-            <div class="cathard catgamer wow animate__animated animate__fadeIn">
-                <p>Nombre del producto</p>
-                <img src="../media/vga.jpg" width="200px" alt="art4">
-                <p> hard Gamer</p>
-            </div>
-            <div class="catsoft catgamer wow animate__animated animate__fadeIn">
-                <p>Nombre del producto</p>
-                <img src="../media/vga.jpg" width="200px" alt="art9">
-                <p>Games PS4</p>
-            </div>
-            <div class="catsoft catgamer wow animate__animated animate__fadeIn">
-                <p>Nombre del producto</p>
-                <img src="../media/vga.jpg" width="200px" alt="art10">
-                <p>Game PS5</p>
-            </div>
-            <div class="catsoft catgamer wow animate__animated animate__fadeIn">
-                <p>Nombre del producto</p>
-                <img src="../media/vga.jpg" width="200px" alt="art11">
-                <p>Game XBox One</p>
-            </div>
-            <div class="catsoft catgamer wow animate__animated animate__fadeIn">
-                <p>Nombre del producto</p>
-                <img src="../media/vga.jpg" width="200px" alt="art12">
-                <p>Game Nintendo</p>
-            </div>
 
-            <div class="cataccesorios catgamer wow animate__animated animate__fadeIn">
-                <p>Nombre del producto</p>
-                <img src="../media/vga.jpg" width="200px" alt="art15">
-                <p>Gabinete Gamer</p>
-            </div>
-            <div class="cataccesorios catgamer wow animate__animated animate__fadeIn">
-                <p>Nombre del producto</p>
-                <img src="../media/vga.jpg" width="200px" alt="art15">
-                <p>Teclado Gamer</p>
-            </div>
-            <div class="cataccesorios catgamer wow animate__animated animate__fadeIn">
-                <p>Nombre del producto</p>
-                <img src="../media/vga.jpg" width="200px" alt="art15">
-                <p>Auriculares Gamer</p>
-            </div>
-            <div class="cataccesorios catgamer wow animate__animated animate__fadeIn">
-                <p>Nombre del producto</p>
-                <img src="../media/vga.jpg" width="200px" alt="art15">
-                <p>Refrigeracion líquida Gamer</p>
+    <!-- Grilla de bootstrap -->
+    <h2 class="separador"> Solo artículos gamer</h2>
+    <div class="articulos gamer">
+        <div class="cathard catgamer wow animate__animated animate__fadeIn">
+            <p>Placa de video</p>
+            <img src="../media/articulos/vga3060.png" width="200px" alt="art4">
+            <p>GEFORCE RTX3060 20GB MSI<br> Precio $642.515,00</p>
+        </div>
+        <div class="cathard wow animate__animated animate__fadeIn">
+            <p>Motherboard</p>
+            <img src="../media/articulos/Mother_MSI.png" width="200px" alt="art7">
+            <p>MOTHER MSI B450M <br> PRO-VDH MAX SAM4 B450 <br> Precio $9.891,00</p>
+        </div>
+        <div class="cathard catgamer wow animate__animated animate__fadeIn">
+            <p>Auriculares </p>
+            <img src="../media/articulos/auricular_hyperx.png" width="200px" alt="art1">
+            <p>HYPERX <br>CLOUD FLIGHT WIRELESS <br> Precio $13.290,00</p>
+        </div>
+        <div class="cathard catgamer wow animate__animated animate__fadeIn">
+            <p>Webcam </p>
+            <img src="../media/articulos/webcam_solarmax.png" width="200px" alt="art2">
+            <p>SOLARMAX ZOOMY <br> FULL HD 1080p<br> Precio $1.899,00</p>
+        </div>
+        <div class="cathard wow animate__animated animate__fadeIn">
+            <p>Disco sólido M.2 </p>
+            <img src="../media/articulos/ssd_adata_M2.png" width="200px" alt="art7">
+            <p>2TB M.2 NVME ADATA XPG <br> Precio $38.463,00</p>
+        </div>
+        <div class="cathard wow animate__animated animate__fadeIn">
+            <p>Placa de video</p>
+            <img src="../media/articulos/vga1050.png" width="200px" alt="art5">
+            <p>MSI GEFORCE GTX 1050TI X 4GB <br> Precio $49.950,00</p>
+        </div>
+        <div class="cathard wow animate__animated animate__fadeIn">
+            <p>Teclado</p>
+            <img src="../media/articulos/teclado_sentey.png" width="200px" alt="art7">
+            <p>SENTEY GTX 865 MECANICO ESP<br> Precio $5.990,00</p>
+        </div>
+        <div class="cathard wow animate__animated animate__fadeIn">
+            <p>Gabinete</p>
+            <img src="../media/articulos/gabinete_blanco.png" width="200px" alt="art7">
+            <p>GAMER HB-037 ATX TG<br> Precio $9.290,00</p>
+        </div>
+        <div class="cathard wow animate__animated animate__fadeIn">
+            <p>Placa de video</p>
+            <img src="../media/articulos/vga1050.png" width="200px" alt="art7">
+            <p>COLORFULL RTX1050 12GB <br> Precio $53.790,00</p>
+        </div>
+        <div class="cathard wow animate__animated animate__fadeIn">
+            <p>Disco</p>
+            <img src="../media/articulos/ssd_M2_WDigital.png" width="200px" alt="art7">
+            <p>W. DIGITAL SSD M.2 1TB<br> Precio $15.500,00</p>
+        </div>
+    </div>
+    <!-- recreo -->
+    <h2 class="separador">Lo que tenes que saber!</h2>
+    <div class="recreo">
+        <div class="recreo__uno">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/25_RVxLpv8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div>
+                <h3>AFA Desarrollo Este viernes 23 y sábado 24 se disputará la clasificatoria sudamericana 😉</h3>
+                <p> para la mayor competición de selecciones de la FIFAe del mundo. Un total de 60 selecciones participarán en la FIFA eNations Series 2021.</p>
             </div>
         </div>
+        <div class="recreo__dos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iGoirv2lLMY?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div>
+                <h3 class="recreo__dos__texto">Competencias Gamers! y sacale el jugo a tu compu 🕹
+                </h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae tempora explicabo repellendus labore quisquam.</p>
+            </div>
+        </div>
+        <div class="recreo__uno">
+            <iframe width=" 560 " height="315 " src="https://www.youtube.com/embed/I5CMCCOzb4s " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+            <div>
+                <h3>The most incredible Grand Final comeback | Hashtag Tom v Levi de Weerd | PS4 Final | EU Qualifier 3 😉
+                </h3>
+                </p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. suscipit ullam expedita.</p>
+            </div>
+        </div>
+        <div class="recreo__dos">
+            <iframe class="recreo__dos__video " width="560 " height="315 " src="https://www.youtube.com/embed/iGoirv2lLMY?start=5 " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+            picture-in-picture " allowfullscreen></iframe>
+            <div>
+                <h3 class="recreo__dos__texto ">Competencias Gamers! y sacale el jugo a tu compu 🕹
+                </h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae tempora explicabo repellendus labore quisquam.</p>
+            </div>
+        </div>
+    </div>
+    </div>
     </main>
-    <footer class="container-fluid">
-        <div class="dire">
-            <h6>&copy Todos los derechos reservados por JLG 2021 <br> en el curso de "Desarrollo Wed" de CoderHouse</h6>
+    <footer class="container-fluid ">
+        <div class="dire ">
+            <h6>&copy Todos los derechos reservados por JLG 2021 <br> en el curso de "Desarrollo Wed " de CoderHouse</h6>
             🏢 Av. Triunvirato 4142 Piso 16 dto. 2ºB <br> 📞 Teléfono 5478-6226 <br> 📨contacto@codigowg.com.ar
             <br>
         </div>
-        <div class="footer__marca mt-3">
-            <img class="logo " src="../media/logo.jpg" alt="Logo">
-            <h1 id="top">codigo>_WG </h1>
-            <h2 class="eslogan">for work and gaming</h2>
+        <div class="footer__marca mt-3 ">
+            <img class="logo " src="../media/logo.jpg " alt="Logo ">
+            <h1 id="top ">codigo>_WG </h1>
+            <h2 class="eslogan ">for work and gaming</h2>
         </div>
-        <div class="redes">
-            <img src="../media/instagram.png" whidth="32px" height="32px" alt="instagram">
-            <img src="../media/facebook.png" whidth="32px" height="32px" alt="facebook">
-            <img src="../media/twitter.png" whidth="32px" height="32px" alt="twitter">
-            <img src="../media/whatsapp.png" whidth="32px" height="32px" alt="whatsapp">
-        </div>
-        <a href="#top">Ir al inicio</a>
+        <section class="redes ">
+            <div>
+                <a href="https://www.instagram.com/?hl=es-la " target="_blank "><img src="../media/redes/instagram.png " whidth="32px " alt="instagram "></a>
+            </div>
+            <div>
+                <a href="https://es-la.facebook.com/ " target="_blank "> <img src="../media/redes/facebook.png " whidth="32px " alt="facebook "></a>
+            </div>
+            <div>
+                <a href="https://twitter.com/?lang=es " target="_blank "><img src="../media/redes/twitter.png " whidth="32px " alt="twitter "></a>
+            </div>
+            <div>
+                <a href="https://www.whatsapp.com/ " target="_blank "><img src="../media/redes/whatsapp.png " whidth="32px " alt="whatsapp "></a>
+            </div>
+        </section>
+        <a href="#top ">Ir al inicio</a>
         </div>
     </footer>
-    <script src="js/wow.min.js"></script>
+    <script src="js/wow.min.js "></script>
     <script>
         new WOW().init();
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous "></script>
 </body>
 
 </html>

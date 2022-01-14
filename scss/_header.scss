@@ -1,12 +1,13 @@
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     .marca {
         display: flex;
         margin: 3px;
         padding: 3px;
+        align-items: flex-start;
         .logo {
             width: 60px;
             flex-direction: row;
@@ -21,9 +22,9 @@ header {
     }
     .eslogan {
         color: whitesmoke;
-        font-family: 'Staatliches', cursive;
+        font-family: 'Staatliches';
         display: inline-block;
-        text-align: center;
+        text-align: left;
         letter-spacing: 2px;
     }
     .redes {

@@ -1,0 +1,33 @@
+@import "variables";
+.recreo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: black;
+}
+
+@mixin recreo_estilo {
+    background-color: $fondo_claro;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    div {
+        width: 50%;
+        text-align: center;
+        margin: 20px;
+        padding: 10px;
+    }
+    iframe {
+        width: 50%;
+    }
+}
+
+.recreo__uno {
+    @include recreo_estilo()
+}
+
+.recreo__dos {
+    @extend .recreo__uno;
+    flex-direction: row-reverse;
+}

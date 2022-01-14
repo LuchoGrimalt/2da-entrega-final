@@ -1,0 +1,50 @@
+.recomendaciones {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat (3, 1fr);
+    grid-template-areas: "reco1 reco1 reco2" "reco3 reco4 reco4" "reco3 reco5 reco6";
+    flex-direction: row;
+    justify-content: space-evenly;
+    div {
+        margin: 20px;
+        padding: 30px;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        justify-self: center;
+        text-shadow: 2px 2px 2px rgb(46, 43, 43);
+        color: rgba(255, 255, 255, 0.973);
+        height: 400px;
+    }
+    .reco1 {
+        background-image: url(../media/tips/reco1.jpg);
+        grid-area: reco1;
+    }
+    .reco2 {
+        grid-area: reco2;
+        background-image: url(../media/tips/reco2.jpg);
+    }
+    .reco3 {
+        height: auto;
+        grid-area: reco3;
+        background-image: url(../media/tips/reco3.jpg);
+    }
+    .reco4 {
+        color: rgb(8, 8, 8);
+        text-shadow: 2px 2px 2px rgb(255, 255, 255);
+        background-image: url(../media/tips/reco4.jpg);
+        grid-area: reco4;
+    }
+    .reco5 {
+        background-image: url(../media/tips/reco5.jpg);
+        grid-area: reco5;
+    }
+    .reco6 {
+        background-image: url(../media/tips/reco6.jpg);
+        grid-area: reco6;
+    }
+}

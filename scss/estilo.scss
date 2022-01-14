@@ -1,8 +1,10 @@
 @import "footer";
 @import "header";
-@import "queries";
+@import "hard";
 @import "variables";
-@import "gridsoft";
+@import "recomendaciones";
+@import "articulos";
+@import "recreo";
 //normalize reset//
 * {
     margin: 0;
@@ -11,131 +13,56 @@
 }
 
 body {
-    background-color: rgb(20, 19, 19);
+    background-color: rgb(41, 30, 66);
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
     font-family: 'Rajdhani', sans-serif;
     position: relative;
-    .navbar {
-        font-size: 22px;
-        text-align: center;
-        h1 {
-            font-size: medium;
-            margin: 0px 20px;
-        }
-    }
-    .categorias {
-        width: 160px;
-        background-color: $fondo_solid;
+}
+
+.separador {
+    height: fit-content;
+    color: whitesmoke;
+    background-image: $fondo_grad;
+    padding: 15px;
+    text-align: center;
+    grid-area: separador;
+}
+
+.direcMapa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+    .formulario {
+        width: 550px;
+        height: 550px;
         margin: 10px;
-        color: whitesmoke;
-        text-transform: capitalize;
-        text-align: left;
-        letter-spacing: 2px;
-        ul {
-            padding: 0px;
-            li {
-                list-style: none;
-                &:hover {
-                    color: rgb(152, 189, 224);
-                    font-size: 105%;
-                }
-            }
-        }
-    }
-    .articulos {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        div {
-            background-color: white;
-            margin: 10px;
-            border: solid grey 2px;
-            border-radius: 3%;
-            text-align: center;
-            transition: all 0.5s;
-            &:hover {
-                transform: scale(1.02, 1.02);
-            }
-            &:hover {
-                background-color: rgb(212, 52, 12);
-                color: whitesmoke;
-            }
-        }
-    }
-    .separador {
-        height: fit-content;
-        color: whitesmoke;
+        padding: 6px;
         background-image: $fondo_grad;
-        padding: 15px;
+        letter-spacing: 2px;
+        color: aliceblue;
+        text-indent: 10px;
+        input.enviarForm {
+            text-transform: capitalize;
+        }
+    }
+    .ubicacion {
+        width: 550px;
+        height: 550px;
+        margin: 10px;
+        padding: 3px;
+        background-image: $fondo_grad;
+        letter-spacing: 2px;
+        color: aliceblue;
         text-align: center;
-        grid-area: separador;
-    }
-    .recreo {
-        color: whitesmoke;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        .recreo__uno {
-            margin: 30px;
-            display: flex;
-            flex-direction: row-reverse;
-            align-items: center;
-            p {
-                text-align: center;
-                padding: 10px;
-            }
-        }
-        .recreo__dos {
-            margin: 30px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            p {
-                text-align: center;
-                padding: 10px;
-            }
-        }
-    }
-    .direcMapa {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-bottom: 20px;
-        .formulario {
-            width: 550px;
-            height: 550px;
-            margin: 10px;
-            padding: 6px;
-            background-image: $fondo_grad;
-            letter-spacing: 2px;
-            color: aliceblue;
-            text-indent: 10px;
-            input.enviarForm {
-                text-transform: capitalize;
-            }
-        }
-        .ubicacion {
-            width: 550px;
-            height: 550px;
-            margin: 10px;
-            padding: 3px;
-            background-image: $fondo_grad;
-            letter-spacing: 2px;
-            color: aliceblue;
-            text-align: center;
-            li {
-                list-style: none;
-            }
+        li {
+            list-style: none;
         }
     }
 }
-
-
-/*Para celulares hasta 960 px*/
 
 @media screen and (max-width: 960px) {
     header {
@@ -147,10 +74,10 @@ body {
             display: none;
         }
         h1 {
-            font-size: 30px;
+            font-size: 2rem;
         }
         .eslogan {
-            font-size: 15px;
+            font-size: 1rem;
         }
         .redes {
             display: none;
@@ -162,32 +89,38 @@ body {
     .articulos {
         flex-flow: row wrap;
         justify-content: space-evenly;
+        .catsoft {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
     .recreo div {
+        width: 100%;
         flex-direction: column;
     }
     .direcMapa {
         flex-direction: column;
     }
     footer {
-        display: column;
+        display: block;
     }
     .footer1 {
         text-align: center;
         justify-content: center;
     }
     .foter2 {
-        font-size: 10px;
+        font-size: 0.8rem;
     }
-    .contenedor1 {
-        width: 95%;
+    .recomendaciones {
         display: flex;
         flex-direction: column;
-    }
-    .contenedor1 div {
-        margin: 2%;
-        padding: 2%;
-        font-size: 1rem;
-        height: fit-content;
+        width: 95%;
+        div {
+            margin: 2%;
+            padding: 2%;
+            font-size: 1rem;
+            height: fit-content;
+        }
     }
 }
