@@ -90,6 +90,7 @@ footer a {
 }
 
 header {
+  background: #0e0f3b;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,10 +172,11 @@ header .redes img {
 
 .repuestos .categorias {
   float: left;
-  width: 25%;
-  background-color: #2758b3;
-  margin: 20px;
+  width: 30%;
+  background-color: #0e0f3b;
+  margin: 0 10px 0 0;
   color: whitesmoke;
+  font-family: 'orbitron';
   text-transform: capitalize;
   text-align: left;
   letter-spacing: 2px;
@@ -243,10 +245,12 @@ header .redes img {
 }
 
 .recomendaciones .reco2 {
+  color: #292828;
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: reco2;
-  background-image: url(../media/tips/reco2.jpg);
+  background: none;
+  text-shadow: none;
 }
 
 .recomendaciones .reco3 {
@@ -269,7 +273,9 @@ header .redes img {
 }
 
 .recomendaciones .reco5 {
-  background-image: url(../media/tips/reco5.jpg);
+  color: #292828;
+  background: none;
+  text-shadow: none;
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: reco5;
@@ -298,7 +304,7 @@ header .redes img {
   background-color: whitesmoke;
   margin: 20px;
   padding: 5px;
-  border: solid grey 2px;
+  border: solid #999 1px;
   border-radius: 3%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -311,10 +317,12 @@ header .redes img {
 .articulos div:hover {
   -webkit-transform: scale(1.03, 1.03);
           transform: scale(1.03, 1.03);
+  -webkit-box-shadow: 2px 2px 5px #999;
+          box-shadow: 2px 2px 5px #999;
+  -moz-box-shadow: 2px 2px 5px #999;
 }
 
 .articulos .catsoft {
-  border: none;
   border-radius: 0%;
   width: 70%;
   display: -webkit-box;
@@ -329,8 +337,7 @@ header .redes img {
 .articulos .catsoft div {
   text-align: center;
   justify-items: center;
-  border-radius: 0%;
-  border-left: #b3acac 2px;
+  border: none;
 }
 
 .recreo {
@@ -387,7 +394,7 @@ header .redes img {
 }
 
 body {
-  background-color: #291e42;
+  background-image: url(../media/techgris.jpg);
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
@@ -396,13 +403,10 @@ body {
 }
 
 .separador {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  color: whitesmoke;
-  background-image: linear-gradient(315deg, #2a2a72 0%, #0019fdcc 74%);
+  color: #1a1638;
   padding: 15px;
   text-align: center;
+  margin: 20px 0 10px 0;
   grid-area: separador;
 }
 
@@ -521,14 +525,11 @@ body {
   footer {
     display: block;
   }
-  .footer1 {
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  footer .dire {
+    color: black;
   }
-  .foter2 {
-    font-size: 0.8rem;
+  footer .logo {
+    display: none;
   }
   .recomendaciones {
     display: -webkit-box;

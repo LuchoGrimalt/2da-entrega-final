@@ -25,8 +25,11 @@
         grid-area: reco1;
     }
     .reco2 {
+        color: rgb(41, 40, 40);
         grid-area: reco2;
-        background-image: url(../media/tips/reco2.jpg);
+        background: none;
+        text-shadow: none;
+
     }
     .reco3 {
         height: auto;
@@ -40,7 +43,9 @@
         grid-area: reco4;
     }
     .reco5 {
-        background-image: url(../media/tips/reco5.jpg);
+        color: rgb(41, 40, 40);
+        background: none;
+        text-shadow: none;
         grid-area: reco5;
     }
     .reco6 {
