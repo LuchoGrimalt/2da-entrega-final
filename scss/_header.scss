@@ -2,7 +2,7 @@ header {
     background: $fondo_solid;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     .marca {
         display: flex;
@@ -24,14 +24,13 @@ header {
     .eslogan {
         color: whitesmoke;
         font-family: 'Staatliches';
-        display: inline-block;
-        text-align: left;
+        display: flex;
+        justify-content: center;
         letter-spacing: 2px;
     }
     .redes {
-        display: inline-flex;
+        display: flex;
         justify-content: space-evenly;
-        margin: 10px;
         img {
             width: 32px;
             flex-direction: row;

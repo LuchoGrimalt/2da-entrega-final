@@ -16,6 +16,11 @@ footer {
       justify-content: space-around;
 }
 
+footer h6 {
+  color: #0e0f3b;
+  margin-bottom: 10px;
+}
+
 footer .dire {
   font-size: large;
   color: whitesmoke;
@@ -98,8 +103,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -135,19 +141,22 @@ header .marca h1 {
 header .eslogan {
   color: whitesmoke;
   font-family: 'Staatliches';
-  display: inline-block;
-  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   letter-spacing: 2px;
 }
 
 header .redes {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 10px;
 }
 
 header .redes img {
@@ -197,7 +206,6 @@ header .redes img {
 }
 
 .recomendaciones {
-  width: 95%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -209,9 +217,9 @@ header .redes img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .recomendaciones div {
@@ -300,15 +308,23 @@ header .redes img {
 }
 
 .articulos div {
+  width: 220px;
+  height: 330px;
   color: #221f1f;
   background-color: whitesmoke;
   margin: 20px;
   padding: 5px;
-  border: solid #999 1px;
+  border: solid #bebbbb 1px;
   border-radius: 3%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   text-align: center;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -334,13 +350,24 @@ header .redes img {
           flex-direction: row;
 }
 
+.articulos .catsoft img {
+  width: 25%;
+}
+
 .articulos .catsoft div {
+  width: auto;
+  height: auto;
   text-align: center;
   justify-items: center;
   border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: none;
+          transform: none;
 }
 
-.recreo {
+.gameneews {
+  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -348,8 +375,9 @@ header .redes img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: black;
 }
 
@@ -421,14 +449,11 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 20px;
+  margin: 10px;
 }
 
 .direcMapa .formulario {
-  width: 550px;
+  width: 35%;
   height: 550px;
   margin: 10px;
   padding: 6px;
@@ -443,7 +468,7 @@ body {
 }
 
 .direcMapa .ubicacion {
-  width: 550px;
+  width: 35%;
   height: 550px;
   margin: 10px;
   padding: 3px;
@@ -451,6 +476,11 @@ body {
   letter-spacing: 2px;
   color: aliceblue;
   text-align: center;
+}
+
+.direcMapa .ubicacion iframe {
+  width: 90%;
+  height: 400px;
 }
 
 .direcMapa .ubicacion li {
@@ -498,6 +528,8 @@ body {
             justify-content: space-evenly;
   }
   .articulos .catsoft {
+    width: auto;
+    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -522,11 +554,31 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .direcMapa .formulario {
+    width: 90%;
+  }
+  .direcMapa .ubicacion {
+    width: 90%;
+  }
   footer {
-    display: block;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  footer h6 {
+    color: whitesmoke;
   }
   footer .dire {
-    color: black;
+    color: #0e0f3b;
   }
   footer .logo {
     display: none;

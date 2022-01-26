@@ -7,6 +7,10 @@ footer {
     align-items: center;
     text-align: center;
     justify-content: space-around;
+    h6{
+        color: $fondo_solid;
+        margin-bottom: 10px;
+    }
     .dire {
         font-size: large;
         color: whitesmoke;

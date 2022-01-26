@@ -1,11 +1,10 @@
 .recomendaciones {
-    width: 95%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat (3, 1fr);
     grid-template-areas: "reco1 reco1 reco2" "reco3 reco4 reco4" "reco3 reco5 reco6";
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     div {
         margin: 20px;
         padding: 30px;
