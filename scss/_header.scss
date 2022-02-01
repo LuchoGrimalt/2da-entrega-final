@@ -26,15 +26,16 @@ header {
         font-family: 'Staatliches';
         display: flex;
         justify-content: center;
+        text-align: center;
         letter-spacing: 2px;
     }
     .redes {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        margin-right: 40px;
         img {
-            width: 32px;
-            flex-direction: row;
-            margin-right: 5px;
+            width: 40px;
+            margin: 0px 10px;
         }
     }
 }

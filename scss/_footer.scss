@@ -1,6 +1,6 @@
 @import "_variables";
 footer {
-    width: 100%;
+    padding: 10px;
     display: flex;
     background: $fondo_grad;
     flex-direction: row;
@@ -14,6 +14,12 @@ footer {
     .dire {
         font-size: large;
         color: whitesmoke;
+        h6{
+            margin: 0px;
+        }
+        p{
+            margin: 5px;
+        }
     }
     .footer__marca {
         flex-direction: column;
@@ -48,7 +54,7 @@ footer {
         img {
             width: 32px;
             flex-direction: row;
-            margin-right: 5px;
+            margin:0px 10px;
         }
     }
     a {
@@ -56,5 +62,8 @@ footer {
         text-shadow: $neon;
         font-size: 1, 3rem;
         text-decoration: none;
+        &:hover{
+            color: rgb(211, 213, 219);
+        }
     }
 }
