@@ -4,28 +4,29 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    .marca {
+    .marca a{
         display: flex;
+        flex-direction: row;
         margin: 3px;
         padding: 3px;
-        align-items: flex-start;
+        align-content: flex-start;
+        text-decoration: none;
         .logo {
             width: 60px;
-            flex-direction: row;
         }
         h1 {
             color: #ffffff;
             font-family: 'Orbitron', sans-serif;
             font-size: 3rem;
-            margin-left: 5px;
+            margin: 0px 5px;
             text-shadow: $neon;
+            list-style-type: none;
         }
     }
     .eslogan {
         color: whitesmoke;
         font-family: 'Staatliches';
-        display: flex;
-        justify-content: center;
+        margin: 2px;
         text-align: center;
         letter-spacing: 2px;
     }
@@ -36,6 +37,9 @@ header {
         img {
             width: 40px;
             margin: 0px 10px;
+            &:hover{
+                filter: drop-shadow(0 0 2px rgb(76, 247, 195));
+            }
         }
     }
 }

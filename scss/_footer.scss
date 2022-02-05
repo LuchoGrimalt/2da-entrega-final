@@ -13,12 +13,22 @@ footer {
     }
     .dire {
         font-size: large;
-        color: whitesmoke;
+        color: #799ab4;
         h6{
-            margin: 0px;
+            font-size: 0.8rem;
+            font-family: 'Orbitron', sans-serif;
+            color: #799ab4;
         }
         p{
-            margin: 5px;
+            margin: 2px;
+            color: whitesmoke;
+        }
+        a{
+            text-shadow: none;
+            color: whitesmoke;
+            &:hover{
+                text-shadow: $neon;
+            }
         }
     }
     .footer__marca {
@@ -55,6 +65,9 @@ footer {
             width: 32px;
             flex-direction: row;
             margin:0px 10px;
+            &:hover{
+                filter: drop-shadow(0 0 2px rgb(55, 139, 114));
+            }
         }
     }
     a {
@@ -63,7 +76,7 @@ footer {
         font-size: 1, 3rem;
         text-decoration: none;
         &:hover{
-            color: rgb(211, 213, 219);
+            color: rgb(144, 248, 248);
         }
     }
 }

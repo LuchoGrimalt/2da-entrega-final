@@ -5,6 +5,7 @@
 @import "recomendaciones";
 @import "articulos";
 @import "recreo";
+@import "contacto";
 
 * {
     margin: 0;
@@ -22,58 +23,16 @@ body {
 
 .separador {
     color: rgb(26, 22, 56);
-    padding: 15px;
     text-align: center;
-    margin: 20px 0 10px 0;
-    grid-area: separador;
+    margin: 30px 5px 10px 5px;
 }
 
-.direcMapa {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 10px;
-    .formulario {
-        width: auto;
-        height: 550px;
-        padding: 6px;
-        border-radius: 10px;
-        background: $fondo_solid;
-        letter-spacing: 2px;
-        color: aliceblue;
-        text-indent: 10px;
-        .enviarForm input{
-            text-transform: capitalize;
-            color: rgb(26, 26, 73);
-            padding: 2px;
-            &:hover{
-                color: whitesmoke;
-                background-color: rgb(42, 28, 117);
-            }
-        }
+.nav-item{
+    margin: 0px 10px;
+    .nav-link:hover{
+        text-shadow: $neon !important;       
     }
-    .ubicacion {
-        display: flex;
-        flex-direction: column;
-        padding: 6px;
-        border-radius: 10px;
-        width: auto;
-        height: auto;
-        color: rgb(27, 25, 61);
-        text-align: center;
-        .direccion{
-            margin: 15px;
-        } 
-            p{
-                margin: 0%;
-                font-size: 1.2rem;
-            }
-        iframe{
-            width: 400px;
-            height: 400px;
-        }
-    }
-}
+}    
 
 
 // vista movile hasta 960px //
@@ -117,22 +76,20 @@ body {
     }
     .direcMapa {
         flex-direction: column;
+        align-items: center;
         margin: 20px;
         .ubicacion{
             margin-top: 20px;
         }
     }
     footer {
-        width: 90%;
+        background: $fondo_solid;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        text-align: center;
+        justify-items: center;
         h6{
             color: whitesmoke;
-        }
-        .dire{
-            color: $fondo_solid;
+            letter-spacing: 2px;
         }
         .logo{
             display: none;
