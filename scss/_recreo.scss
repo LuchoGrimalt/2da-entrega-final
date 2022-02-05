@@ -1,26 +1,24 @@
 @import "variables";
-.gameneews {
-    width: 95%;
+.gamenews {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-items: center;
     color: black;
 }
 
+
 @mixin recreo_estilo {
-    background-color: $fondo_claro;
     margin: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
     div {
-        width: 50%;
+        width: 80%;
         text-align: center;
-        margin: 20px;
         padding: 10px;
     }
     iframe {
-        width: 50%;
+        width: 90%;
     }
 }
 

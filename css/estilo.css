@@ -23,13 +23,12 @@ footer h6 {
 
 footer .dire {
   font-size: large;
-  color: #799ab4;
 }
 
 footer .dire h6 {
   font-size: 0.8rem;
   font-family: 'Orbitron', sans-serif;
-  color: #799ab4;
+  color: #62bdc0;
 }
 
 footer .dire p {
@@ -120,7 +119,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #90f8f8;
+  color: #97f0f0;
 }
 
 header {
@@ -392,8 +391,7 @@ header .redes img:hover {
           transform: none;
 }
 
-.gameneews {
-  width: 95%;
+.gamenews {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -401,14 +399,11 @@ header .redes img:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-items: center;
   color: black;
 }
 
 .recreo__uno, .recreo__dos {
-  background-color: #e8e7f3;
   margin: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -423,14 +418,13 @@ header .redes img:hover {
 }
 
 .recreo__uno div, .recreo__dos div {
-  width: 50%;
+  width: 80%;
   text-align: center;
-  margin: 20px;
   padding: 10px;
 }
 
 .recreo__uno iframe, .recreo__dos iframe {
-  width: 50%;
+  width: 90%;
 }
 
 .recreo__dos {
@@ -559,7 +553,7 @@ body {
     display: none;
   }
   header h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   header .eslogan {
     font-size: 1rem;
@@ -594,7 +588,7 @@ body {
             align-items: center;
   }
   .recreo div {
-    width: 100%;
+    width: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
