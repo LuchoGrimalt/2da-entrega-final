@@ -452,13 +452,19 @@ header .redes img:hover {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: 550px;
+  height: 600px;
   padding: 6px;
   border-radius: 10px;
   background: #0e0f3b;
-  letter-spacing: 2px;
-  color: aliceblue;
   text-indent: 10px;
+  letter-spacing: 1.3px;
+  color: aliceblue;
+}
+
+.direcMapa .formulario textarea {
+  width: 400px !important;
+  height: 250px !important;
+  resize: none;
 }
 
 .direcMapa .formulario .enviarForm input {
@@ -500,8 +506,8 @@ header .redes img:hover {
 }
 
 .direcMapa .ubicacion iframe {
-  width: auto;
-  height: auto;
+  width: 400px;
+  height: 400px;
 }
 
 * {
@@ -553,7 +559,7 @@ body {
     display: none;
   }
   header h1 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   header .eslogan {
     font-size: 1rem;
