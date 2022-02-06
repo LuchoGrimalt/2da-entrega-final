@@ -10,13 +10,14 @@
         width: fit-content;
         height: 600px;
         padding: 6px;
+        margin: 5px;
         border-radius: 10px;
         background: $fondo_solid;
         text-indent: 10px;
         letter-spacing: 1.3px;
         color: aliceblue;
         textarea{
-            width: 400px !important;  
+            width: 360px !important;  
             height: 250px !important;
             resize: none; 
         }
@@ -47,7 +48,7 @@
             }
         } 
         iframe{
-            width: 400px;
+            width: 360px;
             height: 400px;
         }
     }

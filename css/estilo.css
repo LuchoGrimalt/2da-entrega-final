@@ -454,6 +454,7 @@ header .redes img:hover {
   width: fit-content;
   height: 600px;
   padding: 6px;
+  margin: 5px;
   border-radius: 10px;
   background: #0e0f3b;
   text-indent: 10px;
@@ -462,7 +463,7 @@ header .redes img:hover {
 }
 
 .direcMapa .formulario textarea {
-  width: 400px !important;
+  width: 360px !important;
   height: 250px !important;
   resize: none;
 }
@@ -506,7 +507,7 @@ header .redes img:hover {
 }
 
 .direcMapa .ubicacion iframe {
-  width: 400px;
+  width: 360px;
   height: 400px;
 }
 
